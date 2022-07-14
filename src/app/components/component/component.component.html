@@ -1,0 +1,171 @@
+<!-- header -->
+<header>
+  <div class="w-full pl-3">
+    <nav class="flex justify-between items-center py-5">
+
+      <!-- logo -->
+      <div class="w-32 md:w-full md:ml-20">
+        <img src="/assets/img/logo.png" alt="logo">
+      </div>
+
+  <!-- link -->
+
+  <ul
+  [class.invisible]="isShow === false"
+  class="c-menu md:visible">
+      <li class="m-12 md:m-0 hover:text-red-500 md:mx-14 text-red-500"><a href="" class="c-link">Home</a></li>
+      <li class="m-12 md:m-0 hover:text-red-500 md:mx-14"><a href="" class="c-link">Product</a></li>
+      <li class="m-12 md:m-0 hover:text-red-500 md:mx-14"><a href="" class="c-link">Faq</a></li>
+      <li class="m-12 md:m-0 hover:text-red-500 md:mx-14"><a href="" class="c-link">Contact</a></li>
+    </ul>
+
+
+    <!-- menu -->
+    <div
+    (click)="onShow()"
+    class="z-20 md:hidden cursor-pointer mr-5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+  </svg>
+  </div>
+</nav>
+</div>
+</header>
+
+<!-- banner -->
+<section>
+  <div
+  style="background-image: url('/assets/img/banner.png')"
+  class="relative bg-cover bg-no-repeat w-full h-custom"
+  >
+    <div class="z-20 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+      <h3 class="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r bg-white">Food App</h3>
+      <h1 class=" text-4xl md:text-5xl font-bold mb-5 max-w-2xl leading-normal">Why stay hungry when you can order form Bella Onojie</h1>
+      <h4 class="max-w-xl text-xl mb-5 font-light">Download the bella onoje’s food app now on</h4>
+      <div class="flex justify-center">
+        <button
+        class="mx-4 border border-transparent bg-orange-600 px-10 py-3 rounded-full
+        hover:bg-transparent
+        hover:border-white
+        "
+        >Playstore</button>
+
+        <button class="mx-4 border border-white bg-transparent px-10 py-3 rounded-full
+        hover:bg-orange-600
+        hover:border-transparent
+        "
+        >Appstore</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- interface -->
+<section class="relative">
+  <div class="absolute top-1/2 left-1/2 tranform -translate-x-2/3 -translate-y-1/4">
+    <img src="/assets/img/app-img.png" alt="" class="max-w-none w-screen pl-20 md:w-auto">
+  </div>
+</section>
+
+<!-- container -->
+<section class="pt-40 md:pt-96 mt-44">
+  <div class="container mx-auto px-4">
+    <hr class="w-3/5 mx-auto h-0.5 bg-gray-200">
+    <h1 class="text-center text-4xl font-bold mt-16 mb-32">
+      How the app works
+    </h1>
+
+    <!-- step 1 -->
+    <div class="flex justify-center items-center mb-32">
+    <div class=" md:mr-40">
+      <img src="/assets/img/app-1.png" alt="">
+    </div>
+    <div >
+      <h3 class="md:text-2xl font-bold text-orange-600 mb-5">Create an account</h3>
+      <h2 class="md:text-4xl font-bold max-w-lg mb-7">Create/login to an existing account to get started</h2>
+      <h4 class="md:text-2xl text-gray-500 max-w-md">An account is created with your email and a desired password</h4>
+    </div>
+  </div>
+  <!-- step 2 -->
+  <div class="flex justify-center items-center mb-32">
+    <div class=" order-2">
+      <img src="/assets/img/app-2.png" alt="">
+    </div>
+    <div class=" md:mr-40 order-1">
+      <h3 class="md:text-2xl font-bold text-orange-600 mb-5">Explore varieties</h3>
+      <h2 class="md:text-4xl font-bold max-w-lg mb-7">Shop for your favorites meal as e dey hot.</h2>
+      <h4 class="md:text-2xl text-gray-500 max-w-md">Shop for your favorite meals or drinks and enjoy while doing it.</h4>
+    </div>
+  </div>
+  <!-- step 3 -->
+  <div class="flex justify-center items-center mb-32">
+    <div class="mr-2 md:mr-40">
+      <img src="/assets/img/app-3.png" alt="">
+    </div>
+    <div>
+      <h3 class="md:text-2xl font-bold text-orange-600 mb-5">Checkout</h3>
+      <h2 class="md:text-4xl font-bold max-w-lg mb-7">When you done check out and get it delivered.</h2>
+      <h4 class="md:text-2xl text-gray-500 max-w-md">When you done check out and get it delivered with ease.</h4>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- download -->
+<section>
+  <div style="background-image: url('/assets/img/download.png')"
+  class="relative bg-cover bg-no-repeat w-full h-custom"
+  >
+  <div class="absolute text-white text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 class="text-4xl font-bold mb-6">Download the app now.</h1>
+      <h4 class="text-2xl mb-10">
+        Available on your favorite store. Start your premium experience now
+      </h4>
+      <div class="flex justify-center">
+        <button
+        class="mx-4 border border-transparent bg-orange-600 px-10 py-3 rounded-full
+        hover:bg-transparent
+        hover:border-white"
+        >Playstore</button>
+
+        <button class="mx-4 border border-white bg-transparent px-10 py-3 rounded-full
+        hover:bg-orange-600
+        hover:border-transparent"
+        >Appstore</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section class="container mx-auto px-4">
+  <div class="flex flex-row justify-between items-center py-5">
+
+    <div class="w-full">
+      <img src="/assets/img/logo.png" alt="">
+    </div>
+
+      <div class="flex items-center mt-5 w-full justify-end">
+        <a href="" class="flex mx-4">
+          <svg width="35" height="29" viewBox="0 0 35 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M34.1449 4.1787C32.9201 4.70704 31.5873 5.08729 30.2144 5.23539C31.6398 4.38858 32.7072 3.05077 33.2163 1.47295C31.8788 2.26862 30.4135 2.82656 28.8855 3.12202C28.2469 2.43928 27.4745 1.89538 26.6165 1.52421C25.7584 1.15304 24.8332 0.962551 23.8983 0.964616C20.1158 0.964616 17.0739 4.03061 17.0739 7.79305C17.0739 8.32139 17.1379 8.84973 17.242 9.35806C11.5783 9.06187 6.52702 6.35611 3.16884 2.21343C2.55694 3.25857 2.23629 4.44858 2.24023 5.65966C2.24023 8.0292 3.44502 10.1186 5.28221 11.3474C4.19952 11.3047 3.14219 11.0071 2.19621 10.4788V10.5628C2.19621 13.881 4.54173 16.6308 7.66776 17.2632C7.08081 17.4157 6.47701 17.4936 5.87059 17.4953C5.4263 17.4953 5.00603 17.4513 4.58175 17.3913C5.44631 20.097 7.96395 22.0623 10.9619 22.1263C8.61637 23.9635 5.67846 25.0442 2.48839 25.0442C1.91602 25.0442 1.38768 25.0242 0.839325 24.9602C3.86529 26.9014 7.45562 28.0222 11.3221 28.0222C23.8743 28.0222 30.7427 17.6234 30.7427 8.59757C30.7427 8.30138 30.7427 8.00518 30.7227 7.70899C32.0516 6.73636 33.2163 5.53158 34.1449 4.1787Z" fill="#FA4A0C"/>
+            </svg>
+        </a>
+        <a href="" class="flex mx-4">
+          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.2103 0.48291H1.75121C1.04275 0.48291 0.470383 1.05528 0.470383 1.76374V31.2229C0.470383 31.9313 1.04275 32.5037 1.75121 32.5037H31.2103C31.9188 32.5037 32.4912 31.9313 32.4912 31.2229V1.76374C32.4912 1.05528 31.9188 0.48291 31.2103 0.48291ZM27.5119 9.82897H24.9543C22.949 9.82897 22.5607 10.7816 22.5607 12.1825V15.2685H27.3478L26.7234 20.0996H22.5607V32.5037H17.5695V20.1036H13.3948V15.2685H17.5695V11.7062C17.5695 7.57151 20.0951 5.31805 23.7855 5.31805C25.5547 5.31805 27.0716 5.45013 27.5159 5.51017V9.82897H27.5119Z" fill="#FA4A0C"/>
+            </svg>
+        </a>
+        <a href="" class="flex mx-4">
+          <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.625 3.35303H11.375C6.88766 3.35303 3.24997 6.99071 3.24997 11.478V27.728C3.24997 32.2153 6.88766 35.853 11.375 35.853H27.625C32.1123 35.853 35.75 32.2153 35.75 27.728V11.478C35.75 6.99071 32.1123 3.35303 27.625 3.35303Z" fill="#FA4A0C"/>
+            <path d="M26.0001 18.5793C26.2007 19.9317 25.9697 21.3129 25.34 22.5264C24.7103 23.74 23.714 24.7241 22.4928 25.3387C21.2716 25.9534 19.8876 26.1674 18.5378 25.9502C17.188 25.733 15.941 25.0957 14.9742 24.1289C14.0075 23.1622 13.3702 21.9152 13.153 20.5654C12.9358 19.2156 13.1497 17.8316 13.7644 16.6104C14.3791 15.3892 15.3632 14.3929 16.5767 13.7632C17.7903 13.1335 19.1715 12.9025 20.5239 13.103C21.9034 13.3076 23.1805 13.9504 24.1666 14.9365C25.1528 15.9226 25.7956 17.1998 26.0001 18.5793Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M28.4375 10.6655H28.4538" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+      </div>
+    </div>
+  <div class="flex justify-center mb-8 text-xl">
+    <p>Copywright 2020  .com</p>
+  </div>
+</section>
